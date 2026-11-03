@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শিফা হিজামা অ্যান্ড ওয়েলনেস সেন্টার | Shifa Hijama & Cupping Therapy</title>
+    <!-- Bengali Web Fonts: SolaimanLipi & Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.maateen.me/solaiman-lipi/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ShahidulShaon/solaiman-lipi-webfont@main/solaiman-lipi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-moon"></i> সুন্নাহ অনুযায়ী চিকিৎসা ও আধুনিক স্বাস্থ্যসেবা</span>
+                <span class="divider">|</span>
+                <span><i class="fa-solid fa-user-shield"></i> পুরুষ ও মহিলাদের জন্য সম্পূর্ণ পৃথক ও পর্দানশীন ব্যবস্থা</span>
+            </div>
+            <div class="top-contact">
+                <a href="tel:+8801700000000"><i class="fa-solid fa-phone"></i> ০১৭০০-০০০০০০</a>
+                <span class="badge-open"><i class="fa-solid fa-circle text-xs"></i> প্রতিদিন খোলা (সকাল ৯টা - রাত ৯টা)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="header" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">শিফা <span class="brand-highlight">হিজামা</span></span>
+                    <span class="brand-sub">থেরাপি ও ওয়েলনেস সেন্টার</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">হোম</a>
+                <a href="#services">সেবাসমূহ</a>
+                <a href="#why-us">কেন হিজামা?</a>
+                <a href="#process">থেরাপি পদ্ধতি</a>
+                <a href="#gallery">গ্যালারি</a>
+                <a href="#faq">জিজ্ঞাসা</a>
+                <a href="#contact">যোগাযোগ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#booking" class="btn btn-primary nav-book-btn">
+                    <i class="fa-regular fa-calendar-check"></i> সিরিয়াল নিন
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="মেনু খুলুন">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <span class="drawer-title">শিফা হিজামা মেনু</span>
+            <button class="drawer-close" id="drawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="drawer-links">
+            <a href="#home" class="drawer-link">হোম</a>
+            <a href="#services" class="drawer-link">সেবাসমূহ</a>
+            <a href="#why-us" class="drawer-link">কেন হিজামা?</a>
+            <a href="#process" class="drawer-link">থেরাপি পদ্ধতি</a>
+            <a href="#gallery" class="drawer-link">গ্যালারি</a>
+            <a href="#faq" class="drawer-link">জিজ্ঞাসা</a>
+            <a href="#contact" class="drawer-link">যোগাযোগ</a>
+            <a href="#booking" class="btn btn-primary w-100 mt-3 drawer-link">
+                <i class="fa-regular fa-calendar-check"></i> এখনই সিরিয়াল নিন
+            </a>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text-content">
+                <div class="hero-pill">
+                    <span class="pill-badge">১০০% প্রাকৃতিক ও সুন্নাহসম্মত</span>
+                    <span class="pill-text">১০০% জীবাণুমুক্ত ওয়ান-টাইম কাপিং</span>
+                </div>
+                <h1 class="hero-title">
+                    দূষিত রক্ত অপসারণে শরীর হোক <span class="highlight-text">ব্যথামুক্ত ও সতেজ</span>
+                </h1>
+                <p class="hero-desc">
+                    অভিজ্ঞ ও সার্টিফাইড থেরাপিস্ট দ্বারা আধুনিক জীবাণুমুক্ত পরিবেশে প্রফেশনাল হিজামা থেরাপি। মাথাব্যথা, পিঠের ব্যথা, মাইগ্রেন ও শারীরিক দুর্বলতা দূর করতে আজই সিরিয়াল বুক করুন।
+                </p>
+
+                <!-- Quick Stats / Highlights -->
+                <div class="hero-features-list">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>ব্যথাহীন আধুনিক টেকনিক</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>লেডিস ও জেন্টস পৃথক রুম</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>সার্টিফাইড থেরাপিস্ট</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#booking" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-calendar-plus"></i> অ্যাপয়েন্টমেন্ট বুক করুন
+                    </a>
+                    <a href="https://wa.me/8801700000000?text=আসসালামু%20আলাইকুম,%20হিজামা%20সম্পর্কে%20জানতে%20চাই" target="_blank" class="btn btn-outline btn-lg">
+                        <i class="fa-brands fa-whatsapp"></i> সরাসরি চ্যাট করুন
+                    </a>
+                </div>
+
+                <!-- Trust Badge -->
+                <div class="hero-trust">
+                    <div class="avatar-group">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="রোগী" class="avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="রোগী" class="avatar">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="রোগী" class="avatar">
+                        <div class="avatar-count">+৫০০০</div>
+                    </div>
+                    <div class="trust-rating">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="rating-num">৪.৯/৫</span>
+                        </div>
+                        <span class="trust-label">৫,০০০+ সন্তুষ্ট রোগীর আস্থা</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual-wrapper">
+                <div class="hero-image-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUglh6Y4-fOBtf6h5A04Ua9o5PeSc4jGyVKd5s9GE_e1MP1XDp6RaYiah&s=10" alt="হিজামা কাপিং থেরাপি" class="hero-main-img">
+                    <div class="hero-floating-card top-float">
+                        <div class="float-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                        <div class="float-text">
+                            <strong>১০০% স্টেরিলাইজড</strong>
+                            <span>একক ব্যবহারের কাপ</span>
+                        </div>
+                    </div>
+                    <div class="hero-floating-card bottom-float">
+                        <div class="float-icon bg-red"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <div class="float-text">
+                            <strong>দ্রুত রক্ত সঞ্চালন</strong>
+                            <span>প্রাকৃতিক ডিটক্সিফিকেশন</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Therapy Highlights / Stats Bar -->
+    <section class="stats-strip">
+        <div class="container stats-grid">
+            <div class="stat-box">
+                <span class="stat-number">১০+</span>
+                <span class="stat-title">বছরের অভিজ্ঞতা</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">১২,০০০+</span>
+                <span class="stat-title">সফল হিজামা সেশন</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">১০০%</span>
+                <span class="stat-title">জীবাণুমুক্ত ইকুইপমেন্ট</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">২ টি</span>
+                <span class="stat-title">পৃথক জোন (পুরুষ ও মহিলা)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Visual Section -->
+    <section class="section bg-light" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-hand-holding-heart"></i> আমাদের স্পেশালাইজড সেবা</span>
+                <h2 class="section-title">প্রয়োজন অনুযায়ী আধুনিক হিজামা থেরাপি</h2>
+                <p class="section-subtitle">প্রতিটি সেশন অভিজ্ঞ থেরাপিস্ট দ্বারা সর্বোচ্চ স্বাস্থ্যবিধি মেনে সম্পন্ন করা হয়</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80" alt="ওয়েট হিজামা">
+                        <span class="service-badge">সবচেয়ে জনপ্রিয়</span>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header-row">
+                            <h3 class="service-name">ওয়েট হিজামা (রক্তমোক্ষণ)</h3>
+                            <span class="service-price">৳১,২০০/-</span>
+                        </div>
+                        <p class="service-brief">ত্বকের সামান্য উপরিভাগে ক্ষুদ্রতম দাগ কেটে রক্তনালীর ক্ষতিকর টক্সিন ও দূষিত রক্ত বের করা হয়।</p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> পিঠ ও কোমরের তীব্র ব্যথা উপশম</li>
+                            <li><i class="fa-solid fa-check"></i> সম্পূর্ণ ওয়ান-টাইম সার্জিক্যাল ব্লেড</li>
+                        </ul>
+                        <button class="btn btn-card select-service-btn" data-service="ওয়েট হিজামা (Wet Hijama)">
+                            বুক করুন <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=700&q=80" alt="ড্রাই ও ম্যাসাজ হিজামা">
+                        <span class="service-badge">ব্যথাহীন</span>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header-row">
+                            <h3 class="service-name">ড্রাই ও ম্যাসাজ কাপিং</h3>
+                            <span class="service-price">৳৮০০/-</span>
+                        </div>
+                        <p class="service-brief">কোনো প্রকার রক্তপাত ছাড়া ভ্যাকুয়াম সাকশন ও ন্যাচারাল অয়েলের মাধ্যমে মাসল রিলাক্সেশন করা হয়।</p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> মাংসপেশির টান ও ক্লান্তি দূর করে</li>
+                            <li><i class="fa-solid fa-check"></i> গভীর ঘুম ও মানসিক প্রশান্তি প্রদান</li>
+                        </ul>
+                        <button class="btn btn-card select-service-btn" data-service="ড্রাই ও ম্যাসাজ কাপিং (Dry Cupping)">
+                            বুক করুন <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=700&q=80" alt="মাইগ্রেন ও হেড স্পেশাল">
+                        <span class="service-badge">বিশেষজ্ঞ সেবা</span>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header-row">
+                            <h3 class="service-name">মাইগ্রেন ও হেড হিজামা</h3>
+                            <span class="service-price">৳১,৫০০/-</span>
+                        </div>
+                        <p class="service-brief">দীর্ঘদিনের পুরাতন মাথাব্যথা, মাইগ্রেন, সাইনোসাইটিস ও ব্রেন ফ্যাটিগ দূর করার কার্যকর সুন্নতি চিকিৎসা।</p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> মাথা হালকা ও সতেজ অনুভূতি</li>
+                            <li><i class="fa-solid fa-check"></i> চুল কাটা ছাড়া স্পেশাল সাকশন পদ্ধতি</li>
+                        </ul>
+                        <button class="btn btn-card select-service-btn" data-service="মাইগ্রেন ও হেড হিজামা (Head/Migraine)">
+                            বুক করুন <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=80" alt="ফুল বডি ডিটক্স প্যাকেজ">
+                        <span class="service-badge">প্রিমিয়াম কম্বো</span>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-header-row">
+                            <h3 class="service-name">ফুল বডি ডিটক্স থেরাপি</h3>
+                            <span class="service-price">৳২,৫০০/-</span>
+                        </div>
+                        <p class="service-brief">ঘাড়, কাঁধ, পিঠ, কোমর ও পায়ের প্রধান সুন্নাহ পয়েন্টগুলোতে পূর্ণাঙ্গ ডিটক্সিফিকেশন প্যাকেজ।</p>
+                        <ul class="service-perks">
+                            <li><i class="fa-solid fa-check"></i> ১০-১২টি পয়েন্টে ফুল বডি থেরাপি</li>
+                            <li><i class="fa-solid fa-check"></i> কমপ্লিট হেলথ কনসালটেশন ফ্রি</li>
+                        </ul>
+                        <button class="btn btn-card select-service-btn" data-service="ফুল বডি ডিটক্স প্যাকেজ (Full Body Detox)">
+                            বুক করুন <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Therapy Process Section (Step-by-Step) -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-clipboard-check"></i> সহজ ৪টি ধাপ</span>
+                <h2 class="section-title">আমাদের থেরাপিউটিক সেবা পদ্ধতি</h2>
+                <p class="section-subtitle">রোগীর সুরক্ষা ও আরাম আমাদের প্রথম অগ্রাধিকার</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="step-card">
+                    <div class="step-number">০১</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="step-title">স্বাস্থ্য পরীক্ষণ ও পরামর্শ</h3>
+                    <p class="step-text">অভিজ্ঞ চিকিৎসকের মাধ্যমে ব্লাড প্রেশার ও রোগীর বর্তমান সমস্যা নির্ণয় করে পয়েন্ট নির্বাচন।</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">০২</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-pump-medical"></i>
+                    </div>
+                    <h3 class="step-title">জীবাণুমুক্ত প্রস্তুতি</h3>
+                    <p class="step-text">১০০% নতুন ওয়ান-টাইম কাপ এবং অ্যান্টিসেপটিক দ্বারা সংশ্লিষ্ট স্থান নিরাপদভাবে প্রস্তুতকরণ।</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">০৩</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3 class="step-title">ভ্যাকুয়াম ও সুক্ষ্ম রক্তমোক্ষণ</h3>
+                    <p class="step-text">ব্যথাহীনভাবে মাইক্রো-স্ক্র্যাচিংয়ের মাধ্যমে শরীরের জমে থাকা বিষাক্ত রক্ত অপসারণ।</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">০৪</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="step-title">ন্যাচারাল কেয়ার ও স্বস্তি</h3>
+                    <p class="step-text">পরিশেষে অর্গানিক কালোজিরা তেল ও অ্যান্টিসেপটিক ম্যাসাজ এবং পোস্ট-থেরাপি গাইডলাইন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Visual Comparison -->
+    <section class="section bg-light" id="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-images">
+                    <div class="image-stack">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=700&q=80" alt="ক্লিনিক পরিবেশ" class="img-large">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFl4cPU1ir4C8DTZQeXEXPWijHJQ4z7isMRUWd2XoAhwPffIjH7qm_mh4&s=10" alt="প্রাকৃতিক উপাদান" class="img-small">
+                    </div>
+                </div>
+
+                <div class="why-us-content">
+                    <span class="section-tag"><i class="fa-solid fa-award"></i> কেন আমাদের নির্বাচন করবেন</span>
+                    <h2 class="section-title text-left">চিকিৎসা হোক নিরাপদ, সুন্নতি ও বিজ্ঞানসম্মত</h2>
+                    <p class="section-desc">
+                        আমরা কোনো ধরনের বাণিজ্যিক আপস করি না। প্রতিটি রোগীর জন্য নতুন ওয়ান-টাইম কাপিং কিট এবং সর্বোচ্চ গোপনীয়তা বজায় রাখা হয়।
+                    </p>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-box">
+                            <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="benefit-info">
+                                <h4>১০০% ওয়ান-টাইম কিট</h4>
+                                <p>কোনো কাপ বা ব্লেড কখনোই পুনঃব্যবহার করা হয় না।</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-box">
+                            <div class="benefit-icon"><i class="fa-solid fa-person-shelter"></i></div>
+                            <div class="benefit-info">
+                                <h4>মহিলাদের জন্য ফিমেল থেরাপিস্ট</h4>
+                                <p>সম্পূর্ণ পর্দা ও সুশৃঙ্খল আলাদা কেবিনে সেবা।</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-box">
+                            <div class="benefit-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                            <div class="benefit-info">
+                                <h4>সার্টিফাইড প্র্যাকটিশনার</h4>
+                                <p>মানসম্মত প্রশিক্ষণপ্রাপ্ত হিজামা স্পেশালিস্ট।</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-box">
+                            <div class="benefit-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                            <div class="benefit-info">
+                                <h4>সুন্নাহ দিবস রিমাইন্ডার</h4>
+                                <p>চাঁদের ১৭, ১৯ ও ২১ তারিখের বিশেষ সুবিধা।</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Therapy Gallery (Visualizing Therapy & Clinic) -->
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-camera"></i> থেরাপি ভিজ্যুয়াল</span>
+                <h2 class="section-title">আমাদের পরিবেশ ও থেরাপি দৃশ্য</h2>
+                <p class="section-subtitle">ঝকঝকে পরিচ্ছন্ন, প্রশান্তিদায়ক পরিবেশ ও বিশ্বমানের সরঞ্জাম</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="হিজামা থেরাপি সেশন">
+                    <div class="gallery-overlay">
+                        <span>সঠিক পয়েন্টে কাপিং থেরাপি</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="জীবাণুমুক্ত কেবিন">
+                    <div class="gallery-overlay">
+                        <span>জীবাণুমুক্ত আধুনিক কেবিন</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.falaqfood.com/uploads/media/2026/06/019e817c-187e-772d-8317-9d2b3850610c.webp" alt="প্রাকৃতিক তৈল ও সামগ্রী">
+                    <div class="gallery-overlay">
+                        <span>বিশুদ্ধ কালোজিরা তেল ও হিজামা সামগ্রী</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&q=80" alt="ম্যাসাজ ও রিলাক্সেশন">
+                    <div class="gallery-overlay">
+                        <span>মাসল রিলাক্সেশন ও অয়েল ম্যাসাজ</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="অভিজ্ঞ স্বাস্থ্য পরামর্শক">
+                    <div class="gallery-overlay">
+                        <span>অভিজ্ঞ প্র্যাকটিশনার কনসাল্টেশন</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" alt="প্রশান্তিময় পরিবেশ">
+                    <div class="gallery-overlay">
+                        <span>পরিপূর্ণ আরামদায়ক থেরাপি রুম</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking System Section -->
+    <section class="section booking-section" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info-pane">
+                    <span class="booking-tag"><i class="fa-regular fa-clock"></i> সহজে সিরিয়াল নিন</span>
+                    <h2 class="booking-pane-title">আপনার সুবিধাজনক সময়ে অ্যাপয়েন্টমেন্ট বুক করুন</h2>
+                    <p class="booking-pane-desc">
+                        অনলাইনে ফর্মটি পূরণ করে আজই আপনার সিরিয়াল নিশ্চিত করুন। সিরিয়াল নেওয়ার পর আমাদের মেডিকেল টিম কল করে আপনার স্লট কনফার্ম করবে।
+                    </p>
+
+                    <div class="booking-perks-list">
+                        <div class="perk-entry">
+                            <i class="fa-solid fa-headset"></i>
+                            <div>
+                                <strong>সরাসরি কনফার্মেশন কল</strong>
+                                <span>বুকিংয়ের ৩০ মিনিটের মধ্যে ফোনে কনফার্ম</span>
+                            </div>
+                        </div>
+                        <div class="perk-entry">
+                            <i class="fa-solid fa-venus-mars"></i>
+                            <div>
+                                <strong>থেরাপিস্টের জেন্ডার পছন্দ</strong>
+                                <span>মহিলাদের জন্য অভিজ্ঞ ফিমেল থেরাপিস্ট</span>
+                            </div>
+                        </div>
+                        <div class="perk-entry">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <div>
+                                <strong>নো-ওয়েটিং পলিসি</strong>
+                                <span>নির্দিষ্ট সময়ে এলে সরাসরি সেবা প্রদান</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emergency-call-box">
+                        <span>জরুরি সিরিয়াল অথবা প্রশ্নের জন্য কল করুন:</span>
+                        <a href="tel:+8801700000000" class="emergency-number">
+                            <i class="fa-solid fa-phone-volume"></i> +৮৮০ ১৭০০-০০০০০০
+                        </a>
+                    </div>
+                </div>
+
+                <div class="booking-form-pane">
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h3>অ্যাপয়েন্টমেন্ট ফর্ম</h3>
+                            <p>তথ্যগুলো নির্ভুলভাবে দিন</p>
+                        </div>
+
+                        <form id="appointmentForm" novalidate>
+                            <!-- Step 1: Personal Info -->
+                            <div class="form-group">
+                                <label for="patientName"><i class="fa-solid fa-user"></i> আপনার নাম <span class="required">*</span></label>
+                                <input type="text" id="patientName" name="patientName" placeholder="যেমন: মোহাম্মদ রফিকুল ইসলাম" required>
+                                <span class="error-msg" id="nameError">অনুগ্রহ করে আপনার নাম লিখুন</span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="patientPhone"><i class="fa-solid fa-phone"></i> মোবাইল নম্বর <span class="required">*</span></label>
+                                    <input type="tel" id="patientPhone" name="patientPhone" placeholder="০১৭XXXXXXXX" pattern="[0-9]{11}" required>
+                                    <span class="error-msg" id="phoneError">১১ ডিজিটের সঠিক মোবাইল নম্বর দিন</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="patientGender"><i class="fa-solid fa-person-half-dress"></i> রোগী ও থেরাপিস্ট <span class="required">*</span></label>
+                                    <select id="patientGender" name="patientGender" required>
+                                        <option value="" disabled selected>নির্বাচন করুন</option>
+                                        <option value="পুরুষ (মেইল থেরাপিস্ট)">পুরুষ রোগী (মেইল থেরাপিস্ট)</option>
+                                        <option value="মহিলা (ফিমেল থেরাপিস্ট)">মহিলা রোগী (ফিমেল থেরাপিস্ট)</option>
+                                    </select>
+                                    <span class="error-msg" id="genderError">জেন্ডার নির্বাচন করুন</span>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Service Selection -->
+                            <div class="form-group">
+                                <label for="serviceType"><i class="fa-solid fa-hand-holding-medical"></i> হিজামা সেবার ধরণ <span class="required">*</span></label>
+                                <select id="serviceType" name="serviceType" required>
+                                    <option value="" disabled selected>কাঙ্ক্ষিত সেবা বেছে নিন</option>
+                                    <option value="ওয়েট হিজামা (Wet Hijama)">ওয়েট হিজামা (রক্তমোক্ষণ) - ৳১,২০০</option>
+                                    <option value="ড্রাই ও ম্যাসাজ কাপিং (Dry Cupping)">ড্রাই ও ম্যাসাজ কাপিং - ৳৮০০</option>
+                                    <option value="মাইগ্রেন ও হেড হিজামা (Head/Migraine)">মাইগ্রেন ও হেড হিজামা - ৳১,৫০০</option>
+                                    <option value="ফুল বডি ডিটক্স প্যাকেজ (Full Body Detox)">ফুল বডি ডিটক্স থেরাপি - ৳২,৫০০</option>
+                                    <option value="চিকিৎসকের সাথে পরামর্শ করে নির্ধারণ">চিকিৎসকের পরামর্শে নির্ধারণ করব</option>
+                                </select>
+                                <span class="error-msg" id="serviceError">সেবার ধরণ নির্বাচন করুন</span>
+                            </div>
+
+                            <!-- Step 3: Date & Time Slot -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="bookingDate"><i class="fa-regular fa-calendar"></i> তারিখ <span class="required">*</span></label>
+                                    <input type="date" id="bookingDate" name="bookingDate" required>
+                                    <span class="error-msg" id="dateError">সঠিক তারিখ নির্বাচন করুন</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="timeSlot"><i class="fa-regular fa-clock"></i> সময় স্লট <span class="required">*</span></label>
+                                    <select id="timeSlot" name="timeSlot" required>
+                                        <option value="" disabled selected>স্লট বাছুন</option>
+                                        <option value="সকাল ১০:০০ - ১২:০০">সকাল ১০:০০ - ১২:০০</option>
+                                        <option value="দুপুর ১২:০০ - ০২:০০">দুপুর ১২:০০ - ০২:০০</option>
+                                        <option value="বিকাল ০৩:০০ - ০৫:০০">বিকাল ০৩:০০ - ০৫:০০</option>
+                                        <option value="সন্ধ্যা ০৫:০০ - ০৭:০০">সন্ধ্যা ০৫:০০ - ০৭:০০</option>
+                                        <option value="রাত ০৭:০০ - ০৯:০০">রাত ০৭:০০ - ০৯:০০</option>
+                                    </select>
+                                    <span class="error-msg" id="timeError">সময় স্লট নির্বাচন করুন</span>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Optional Health Note -->
+                            <div class="form-group">
+                                <label for="healthNote"><i class="fa-regular fa-comment-dots"></i> শারীরিক সমস্যা বা নোট (ঐচ্ছিক)</label>
+                                <textarea id="healthNote" name="healthNote" rows="2" placeholder="যেমন: কোমর ব্যথা বা মাইগ্রেন..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitBookingBtn">
+                                <span class="btn-text"><i class="fa-solid fa-check-circle"></i> সিরিয়াল নিশ্চিত করুন</span>
+                                <span class="btn-loader" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> প্রসেস হচ্ছে...</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patients Review / Testimonial Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-comments"></i> রোগীদের মন্তব্য</span>
+                <h2 class="section-title">আমাদের সেবায় সন্তুষ্ট রোগীদের কথা</h2>
+                <p class="section-subtitle">সরাসরি সেবা গ্রহণকারীদের বাস্তব অভিজ্ঞতা</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"আমার প্রায় ৪ বছরের ক্রনিক ব্যাকপেইন ছিল। শিফা সেন্টারে ২ বার হিজামা নেওয়ার পর এখন আলহামদুলিল্লাহ সম্পূর্ণ সুস্থ। পরিবেশ খুবই পরিচ্ছন্ন।"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">তা</div>
+                        <div class="reviewer-meta">
+                            <h4>তানভীর আহমেদ</h4>
+                            <span>ব্যবসায়ী, ঢাকা</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"মহিলাদের জন্য এত সুন্দর পর্দার ব্যবস্থা এবং অভিজ্ঞ নারী থেরাপিস্ট দেখে আমি মুগ্ধ। মাইগ্রেনের ব্যথায় অসাধারণ উপকার পেয়েছি।"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar bg-pink">না</div>
+                        <div class="reviewer-meta">
+                            <h4>নাজমুন নাহার</h4>
+                            <span>গৃহিণী, উত্তরা</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"১০০% ওয়ান-টাইম কাপ ও ব্লেড ব্যবহার করে যা দেখে খুব ভালো লেগেছে। ব্যথাহীন কাটিং আর থেরাপিস্টদের বিনম্র ব্যবহার সত্যিই প্রশংসনীয়।"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">মু</div>
+                        <div class="reviewer-meta">
+                            <h4>মুহাম্মদ জাহিদ</h4>
+                            <span>সফটওয়্যার ইঞ্জিনিয়ার</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section (Common Queries) -->
+    <section class="section" id="faq">
+        <div class="container faq-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-circle-question"></i> সাধারণ জিজ্ঞাসা</span>
+                <h2 class="section-title">হিজামা সম্পর্কে প্রচলিত কিছু প্রশ্ন ও উত্তর</h2>
+                <p class="section-subtitle">আপনার মনে যে প্রশ্নগুলো আসতে পারে</p>
+            </div>
+
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item active">
+                    <button class="accordion-header">
+                        <span>১. হিজামা থেরাপিতে কি কোনো ব্যথা অনুভূত হয়?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>না, হিজামায় কোনো অসহ্য ব্যথা হয় না। আধুনিক পদ্ধতিতে ত্বকের একেবারে উপরিভাগে অতি সূক্ষ্মভাবে হালকা স্ক্র্যাচ দেওয়া হয়, যা অনেকটা পিপড়ার কামড়ের মতো অনুভূত হয়। শিশু ও বয়োবৃদ্ধরাও নিরাপদে এটি নিতে পারেন।</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>২. হিজামা নেওয়ার আগে ও পরে কী কী সতর্কতা মেনে চলতে হয়?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>হিজামা নেওয়ার অন্তত ২-৩ ঘণ্টা আগে ভারী খাবার গ্রহণ না করা উত্তম। হিজামার পর ২৪ ঘণ্টা ভারী কাজ না করা এবং কুসুম গরম পানিতে গোসল করার পরামর্শ দেওয়া হয়। প্রচুর পানি ও পুষ্টিকর তরল পান করা উচিত।</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>৩. হিজামা কি সম্পূর্ণ জীবাণুমুক্ত ও নিরাপদ?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>হ্যাঁ, শতভাগ নিরাপদ। আমাদের সেন্টারে প্রতিটি রোগীর জন্য সিল করা নতুন ওয়ান-টাইম কাপিং সেট ও নতুন সার্জিক্যাল ব্লেড ব্যবহার করা হয়। কাজ শেষে তা যথাযথ নিয়মে ধ্বংস করা হয়।</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>৪. মহিলাদের হিজামার জন্য কি নারী চিকিৎসক বা থেরাপিস্ট আছেন?</span>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>অবশ্যই। আমাদের সেন্টারে মা-বোনদের জন্য সম্পূর্ণ পৃথক ফ্লোর/কেবিন রয়েছে এবং সেখানে অভিজ্ঞ ও প্রশিক্ষিত নারী থেরাপিস্ট দ্বারা সর্বোচ্চ পর্দা বজায় রেখে সেবা দেওয়া হয়।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="section bg-light" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon-bubble"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>আমাদের ঠিকানা</h3>
+                    <p>বাড়ি #১২, রোড #০৫, সেক্টর #০৩, উত্তরা, ঢাকা-১২৩০ (মেট্রোরেল স্টেশনের সন্নিকটে)</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon-bubble"><i class="fa-solid fa-phone"></i></div>
+                    <h3>সরাসরি কল করুন</h3>
+                    <p>+৮৮০ ১৭০০-০০০০০০<br>+৮৮০ ১৮০০-০০০০০০</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon-bubble"><i class="fa-solid fa-clock"></i></div>
+                    <h3>সেন্টার খোলা থাকার সময়</h3>
+                    <p>শনিবার হতে শুক্রবার (সাত দিনই)<br>সকাল ৯:০০ টা থেকে রাত ৯:০০ টা পর্যন্ত</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo footer-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="logo-text">
+                        <span class="brand-name text-white">শিফা <span class="brand-highlight">হিজামা</span></span>
+                        <span class="brand-sub text-gray">থেরাপি ও ওয়েলনেস সেন্টার</span>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    সুন্নাহ সম্মত ও আধুনিক চিকিৎসাবিজ্ঞানের মেলবন্ধনে একটি বিশ্বস্ত হিজামা থেরাপি সেন্টার। আপনার সুস্থতাই আমাদের ব্রত।
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="ফেসবুক"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="ইউটিউব"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="হোয়াটসঅ্যাপ"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">কুইক লিংক</h4>
+                <ul class="footer-nav">
+                    <li><a href="#home">হোম</a></li>
+                    <li><a href="#services">সেবাসমূহ</a></li>
+                    <li><a href="#process">পদ্ধতি</a></li>
+                    <li><a href="#booking">বুকিং</a></li>
+                    <li><a href="#faq">জিজ্ঞাসা</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">জনপ্রিয় সেবা</h4>
+                <ul class="footer-nav">
+                    <li><a href="#booking">ওয়েট হিজামা থেরাপি</a></li>
+                    <li><a href="#booking">ড্রাই ও ম্যাসাজ কাপিং</a></li>
+                    <li><a href="#booking">মাইগ্রেন ও সাইনোসাইটিস স্পেশাল</a></li>
+                    <li><a href="#booking">ফুল বডি ডিটক্সিফিকেশন</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">সিরিয়াল হটলাইন</h4>
+                <p class="text-sm">দ্রুত সিরিয়াল বা পরামর্শের জন্য সরাসরি ডায়াল করুন:</p>
+                <a href="tel:+8801700000000" class="footer-call-btn">
+                    <i class="fa-solid fa-phone"></i> ০১৭০০-০০০০০০
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>© ২০২৬ শিফা হিজামা অ্যান্ড ওয়েলনেস সেন্টার। সর্বস্বত্ব সংরক্ষিত।</p>
+                <p>Develop by  <a href="https://clinora.xyz">Clinora</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Booking Confirmation Modal -->
+    <div class="modal-overlay" id="confirmationModal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modalCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-success-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="modal-title">অ্যাপয়েন্টমেন্ট সফলভাবে গৃহীত হয়েছে!</h3>
+            <p class="modal-subtitle">শিফা হিজামা সেন্টারে আপনার সিরিয়াল রেকর্ড করা হয়েছে।</p>
+
+            <div class="receipt-box">
+                <div class="receipt-row">
+                    <span>বুকিং আইডি:</span>
+                    <strong class="receipt-id" id="receiptId">SH-8492</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>রোগীর নাম:</span>
+                    <strong id="receiptName">-</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>মোবাইল নম্বর:</span>
+                    <strong id="receiptPhone">-</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>সেবার ধরণ:</span>
+                    <strong id="receiptService">-</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>তারিখ ও সময়:</span>
+                    <strong id="receiptDateTime">-</strong>
+                </div>
+                <div class="receipt-row">
+                    <span>থেরাপিস্ট টাইপ:</span>
+                    <strong id="receiptGender">-</strong>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <a href="#" id="modalWhatsAppBtn" target="_blank" class="btn btn-whatsapp w-100">
+                    <i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপে কনফার্মেশন পাঠান
+                </a>
+                <button type="button" class="btn btn-outline w-100 mt-2" id="modalDoneBtn">ঠিক আছে</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Fast Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://wa.me/8801700000000?text=আসসালামু%20আলাইকুম,%20হিজামা%20সিরিয়াল%20নিতে%20চাই" target="_blank" class="float-btn float-wa" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+8801700000000" class="float-btn float-call" aria-label="Call">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="#booking" class="float-btn float-book" aria-label="Book Now">
+            <i class="fa-regular fa-calendar-check"></i>
+        </a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
