@@ -1529,6 +1529,166 @@ button, input, select, textarea {
     line-height: 1.5;
 }
 
+.contact-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-red);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-card-link:hover {
+    color: var(--primary-red-hover);
+    transform: translateX(3px);
+}
+
+.open-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--green-success);
+    background: var(--green-light);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+}
+
+/* ================= Google Map Section ================= */
+.map-wrapper {
+    margin-top: 36px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.map-wrapper:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-red-border);
+}
+
+.map-header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border-light);
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.map-header-info {
+    flex: 1;
+    min-width: 260px;
+}
+
+.map-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary-red);
+    background: var(--primary-red-light);
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+    margin-bottom: 8px;
+    border: 1px solid var(--primary-red-subtle);
+}
+
+.map-card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.map-card-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.map-card-desc i {
+    color: var(--primary-red);
+}
+
+.direction-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 13px 26px;
+    border-radius: var(--radius-full);
+    background: var(--primary-red);
+    color: var(--white);
+    box-shadow: 0 4px 14px rgba(201, 24, 43, 0.35);
+    text-decoration: none;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.direction-btn:hover {
+    background: var(--primary-red-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(201, 24, 43, 0.45);
+    color: var(--white);
+}
+
+.direction-btn i {
+    font-size: 1.1rem;
+}
+
+.map-iframe-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background: #e5e7eb;
+}
+
+.map-iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.map-features-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 18px 30px;
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border-light);
+}
+
+.map-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.map-feature-item i {
+    color: var(--primary-red);
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+
 /* ================= Footer ================= */
 .footer {
     background-color: #111827;
@@ -1879,6 +2039,31 @@ button, input, select, textarea {
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .map-header-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .map-header-action {
+        width: 100%;
+    }
+
+    .direction-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .map-features-bar {
+        grid-template-columns: 1fr;
+        padding: 16px 20px;
+        gap: 12px;
+    }
+
+    .map-iframe-container {
+        height: 320px;
     }
 
     .form-row {
